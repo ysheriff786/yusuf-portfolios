@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yusuf Sheriff | Anime Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e5e7eb;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      background: rgba(2, 6, 23, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Hero */
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: radial-gradient(circle at top, rgba(56,189,248,0.15), transparent 60%);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      max-width: 600px;
+      color: #94a3b8;
+    }
+
+    .hero .anime-line {
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      margin: 25px auto;
+      border-radius: 10px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 5px #38bdf8; }
+      to { box-shadow: 0 0 20px #38bdf8; }
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #38bdf8;
+      text-align: center;
+    }
+
+    /* About */
+    .about p {
+      text-align: center;
+      color: #cbd5f5;
+      line-height: 1.7;
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(56,189,248,0.3);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(56,189,248,0.4);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: rgba(15, 23, 42, 0.8);
+      border-radius: 20px;
+      padding: 25px;
+      border: 1px solid rgba(129,140,248,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(129,140,248,0.4);
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2.2rem; }
+      nav { padding: 15px 25px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>YS</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h2>Hi, I'm <span>Yusuf Sheriff</span></h2>
+  <div class="anime-line"></div>
+  <p>
+    Computer Science Engineering student at KSR College of Engineering.
+    Aspiring Software Engineer with a passion for building elegant, real‑world solutions.
+  </p>
+</section>
+
+<section id="about" class="about">
+  <h3>About Me</h3>
+  <p>
+    I am a motivated Computer Science Engineering student focused on continuous learning and skill development.
+    I enjoy turning ideas into reality through clean code, logical thinking, and modern technologies.
+    My goal is to grow into a professional software engineer by building meaningful projects and gaining industry exposure.
+  </p>
+</section>
+
+<section id="skills">
+  <h3>Skills</h3>
+  <div class="skills">
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Java</div>
+    <div class="skill-card">C</div>
+    <div class="skill-card">C++</div>
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript (Basics)</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="projects">
+    <div class="project-card">
+      <h4>Portfolio Website</h4>
+      <p>Personal anime‑styled portfolio website built using HTML and CSS.</p>
+    </div>
+    <div class="project-card">
+      <h4>Upcoming Projects</h4>
+      <p>More academic and personal projects will be added soon.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h3>Contact</h3>
+  <p>Email: ysheriff@gmail.com</p>
+  <a href="https://www.linkedin.com/in/yusuf-sheriff-5143b7372" target="_blank">LinkedIn Profile</a>
+</section>
+
+<footer>
+  © 2025 Yusuf Sheriff M | Designed with an Anime‑Inspired Theme
+</footer>
+
+</body>
+</html>
